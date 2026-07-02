@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is the protagonist’s name in the game?",
+    "options": ["Eren", "Mikasa", "Armin", "Levi"],
+    "answer_index": 0
+  },
+  {
+    "question": "Which faction does the main character belong to?",
+    "options": ["Survey Corps", "Garrison", "Military Police", "Titans"],
+    "answer_index": 0
+  },
+  {
+    "question": "What is the name of the giant humanoid enemies?",
+    "options": ["Titans", "Colossus", "Behemoths", "Giants"],
+    "answer_index": 0
+  },
+  {
+    "question": "Who is the captain of the Survey Corps?",
+    "options": ["Erwin Smith", "Jean Kirstein", "Connie Springer", "Hange Zoe"],
+    "answer_index": 0
+  },
+  {
+  "question": "What is the main goal of the Survey Corps?",
+  "options": ["Protect the king", "Trade with other nations", "Explore outside the Walls", "Build new cities"],
+  "answer_index": 2
+  }
+]

@@ -1,0 +1,84 @@
+name: aot_web
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.6
+  shared_preferences: ^2.5.3
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/logo.png
+    - assets/images/backgaot.jpg
+    - assets/images/blood.png
+    - assets/images/armin.png
+    - assets/images/mikasa.png
+    - assets/images/aotfinal.jpg
+    - assets/images/backg2.jpg
+    - assets/images/Eren.png
+    - assets/images/Levi.png
+    - assets/images/Erwin.png
+    - assets/images/Hange.png
+    - assets/images/Renier.png
+    - assets/images/jean.png
+    - assets/images/ERENF.png
+    - assets/images/MIKASAF.png
+    - assets/images/ARMINF.png
+    - assets/images/LEVIF.png
+    - assets/images/ERWINF.png
+    - assets/images/HANGEF.png
+    - assets/images/RENIERF.png
+    - assets/images/JEANF.png
+    - assets/images/FEMALE.png
+    - assets/images/ATTACK.png
+    - assets/images/COLOSSAL.png
+    - assets/images/BEAST.png
+    - assets/images/ARMORED.png
+    - assets/images/CART.png
+    - assets/images/JAW.png
+    - assets/images/ATTACKF.png
+    - assets/images/COLF.png
+    - assets/images/ARMF.png
+    - assets/images/BEASTF.png
+    - assets/images/FEMALEF.png
+    - assets/images/JAWF.png
+    - assets/images/CARTF.png
+    - assets/images/WAR.png
+    - assets/images/WARF.png
+    - assets/images/icon1.png
+    - assets/images/odm.png
+    - assets/images/icon2.png
+    - assets/images/banner1.jpg
+    - assets/images/banner2.jpg
+    - assets/images/banner3.jpg
+    - assets/images/backg.jpg
+    - assets/images/erenprofilepic.png
+    - assets/images/erenprofilepic2.png
+    - assets/images/profile_icon.png
+    - assets/quiz_data.json
+    - assets/images/favoriteicon.png
+    - assets/images/wallmariabg.jpg
+    - assets/images/inside the Wall Maria - Attck On Titan.jpg
+    - assets/images/Defending From Giants - Attack On Titan.jpg
+    - assets/images/Attack On Titan (1).jpg
+  fonts:
+    - family: Ditty
+      fonts:
+        - asset: fonts/Ditty.ttf
