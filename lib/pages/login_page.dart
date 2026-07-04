@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24.0),
             child: Card(
-              color: Colors.black.withOpacity(0.75),
+              color: Colors.black.withValues(alpha: 0.75),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),

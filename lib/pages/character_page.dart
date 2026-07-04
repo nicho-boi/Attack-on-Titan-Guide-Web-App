@@ -327,7 +327,7 @@ class _CharacterPageState extends State<CharacterPage>
             bottom: 0,
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              color: Colors.black.withOpacity(0.7),
+              color: Colors.black.withValues(alpha: 0.7),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -354,7 +354,7 @@ class _CharacterPageState extends State<CharacterPage>
                           boxShadow: isSelected
                               ? [
                                   BoxShadow(
-                                    color: Colors.amber.withOpacity(0.6),
+                                    color: Colors.amber.withValues(alpha: 0.6),
                                     blurRadius: 10,
                                     spreadRadius: 3,
                                   ),
@@ -454,7 +454,7 @@ class _CharacterPageState extends State<CharacterPage>
           child: Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.6),
+              color: Colors.black.withValues(alpha: 0.6),
               borderRadius: BorderRadius.circular(14),
             ),
             child: Column(

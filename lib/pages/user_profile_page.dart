@@ -73,7 +73,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
           "User Profile",
           style: TextStyle(fontFamily: 'Ditty'),
         ),
-        backgroundColor: Colors.black.withOpacity(0.6),
+        backgroundColor: Colors.black.withValues(alpha: 0.6),
       ),
       backgroundColor: Colors.black,
       body: Container(
@@ -139,8 +139,8 @@ class _UserProfilePageState extends State<UserProfilePage> {
                 (character) => Container(
                   margin: const EdgeInsets.symmetric(vertical: 4),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(
-                      0.5,
+                    color: Colors.black.withValues(
+                      alpha: 0.5,
                     ), // Black background with opacity
                     borderRadius: BorderRadius.circular(4),
                   ),

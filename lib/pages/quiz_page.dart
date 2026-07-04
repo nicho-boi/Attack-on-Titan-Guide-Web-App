@@ -84,7 +84,7 @@ class _QuizPageState extends State<QuizPage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.4),
+        backgroundColor: Colors.black.withValues(alpha: 0.4),
         elevation: 0,
         title: const Text("Scout Quiz", style: TextStyle(fontFamily: 'Ditty')),
         actions: [
@@ -128,7 +128,7 @@ class _QuizPageState extends State<QuizPage> {
       constraints: const BoxConstraints(maxWidth: 600),
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.6),
+        color: Colors.black.withValues(alpha: 0.6),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(width: 1, color: Colors.white24),
       ),
@@ -236,7 +236,7 @@ class _QuizPageState extends State<QuizPage> {
       padding: const EdgeInsets.all(24),
       margin: const EdgeInsets.symmetric(horizontal: 24),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.6),
+        color: Colors.black.withValues(alpha: 0.6),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: Colors.white24),
       ),

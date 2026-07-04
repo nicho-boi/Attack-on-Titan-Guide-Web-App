@@ -42,7 +42,7 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black.withOpacity(0.3),
+      backgroundColor: Colors.black.withValues(alpha: 0.3),
       elevation: 0,
       centerTitle: false,
       titleSpacing: 0,
@@ -134,7 +134,7 @@ class _NavBarState extends State<NavBar> {
                     boxShadow: hovering
                         ? [
                             BoxShadow(
-                              color: Colors.red.withOpacity(0.8),
+                              color: Colors.red.withValues(alpha: 0.8),
                               blurRadius: 12,
                               spreadRadius: 1,
                             ),

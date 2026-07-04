@@ -81,6 +81,19 @@ flutter devices
 flutter run
 ```
 
+## Deploying to Vercel
+
+This repo includes `vercel.json`, so Vercel can build and serve the Flutter web output automatically.
+
+Use these settings if Vercel asks for them:
+
+```text
+Framework Preset: Other
+Install Command: git clone https://github.com/flutter/flutter.git -b stable --depth 1 flutter && ./flutter/bin/flutter config --enable-web && ./flutter/bin/flutter pub get
+Build Command: ./flutter/bin/flutter build web --release
+Output Directory: build/web
+```
+
 ## Notes
 
 This is a fan-made educational/project app and is not affiliated with Attack on Titan, Hajime Isayama, Kodansha, MAPPA, or Wit Studio.

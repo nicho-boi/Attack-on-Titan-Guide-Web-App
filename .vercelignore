@@ -1,0 +1,7 @@
+.dart_tool/
+.pub/
+.pub-cache/
+build/
+android/build/
+flutter/
+*.log
