@@ -3,6 +3,17 @@
   "installCommand": "git clone https://github.com/flutter/flutter.git -b stable --depth 1 flutter && ./flutter/bin/flutter config --enable-web && ./flutter/bin/flutter pub get",
   "buildCommand": "./flutter/bin/flutter build web --release",
   "outputDirectory": "build/web",
+  "headers": [
+    {
+      "source": "/(index.html|flutter_bootstrap.js|main.dart.js|flutter_service_worker.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate, proxy-revalidate"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

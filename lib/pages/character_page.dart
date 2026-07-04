@@ -273,6 +273,7 @@ class _CharacterPageState extends State<CharacterPage>
 
   @override
   Widget build(BuildContext context) {
+    const bottomControlsHeight = 168.0;
     final characters = isHumanSelected ? humans : titans;
     final selected = characters.firstWhere(
       (char) => char['name'] == selectedCharacter,
@@ -296,12 +297,15 @@ class _CharacterPageState extends State<CharacterPage>
               fit: BoxFit.cover,
             ),
           ),
-          SafeArea(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.only(top: 10, bottom: 190),
-              child: FadeTransition(
-                opacity: _fadeAnimation,
-                child: _buildSelectedCharacter(selected, isFavorite),
+          Positioned.fill(
+            bottom: bottomControlsHeight,
+            child: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.only(top: 10, bottom: 16),
+                child: FadeTransition(
+                  opacity: _fadeAnimation,
+                  child: _buildSelectedCharacter(selected, isFavorite),
+                ),
               ),
             ),
           ),
