@@ -297,14 +297,12 @@ class _CharacterPageState extends State<CharacterPage>
             ),
           ),
           SafeArea(
-            child: Column(
-              children: [
-                const SizedBox(height: 10),
-                FadeTransition(
-                  opacity: _fadeAnimation,
-                  child: _buildSelectedCharacter(selected, isFavorite),
-                ),
-              ],
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.only(top: 10, bottom: 190),
+              child: FadeTransition(
+                opacity: _fadeAnimation,
+                child: _buildSelectedCharacter(selected, isFavorite),
+              ),
             ),
           ),
           // Favorite button fixed at top right of the image
@@ -432,13 +430,20 @@ class _CharacterPageState extends State<CharacterPage>
     Map<String, String> selected,
     bool isFavorite,
   ) {
+    final mediaQuery = MediaQuery.of(context);
+    final isCompactPhone =
+        mediaQuery.size.width < 430 || mediaQuery.size.height < 760;
     final stats = isHumanSelected
         ? characterStats[selected['name']] ?? {}
         : titanStats[selected['name']] ?? {};
 
     return Column(
       children: [
-        Image.asset(selected['image']!, height: 230, fit: BoxFit.contain),
+        Image.asset(
+          selected['image']!,
+          height: isCompactPhone ? 190 : 230,
+          fit: BoxFit.contain,
+        ),
         const SizedBox(height: 6),
         Text(
           selected['name']!,
@@ -508,12 +513,12 @@ class _CharacterPageState extends State<CharacterPage>
                 if (stats.isNotEmpty) const SizedBox(height: 10),
                 Text(
                   selected['description'] ?? '',
-                  style: const TextStyle(
-                    fontSize: 14,
+                  style: TextStyle(
+                    fontSize: isCompactPhone ? 13 : 14,
                     color: Colors.white70,
                     height: 1.3,
                   ),
-                  textAlign: TextAlign.justify,
+                  textAlign: isCompactPhone ? TextAlign.left : TextAlign.justify,
                 ),
               ],
             ),
